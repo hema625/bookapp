@@ -1,0 +1,37 @@
+<h2>Edit PAge</h2>
+<% include ./partials/header %>
+<h1>Edit Page</h1>
+
+<form action = "/books/<%= edit._id %>?_method=PUT" method = "POST">
+
+
+  
+           <label>Edit Title</label>
+           <input type = "text" name = "g[title]" value = "<%= edit.title %>">
+   
+  
+          <label>Edit Image</label>
+          <input type = "text" name = "g[image]" placeholder = "Enter your image" value = "<%= edit.image %>">
+  
+    
+    <label>Edit Description</label>
+    
+    <textarea name = "g[description]" placeholder = "Enter your Description"><%= edit.description %></textarea>
+    
+   
+  
+        <button>Submit</button>
+        <div>
+             <a href = "/books">Back to HomePage</a>
+        </div>
+        
+        <div>
+             <a href = "/books/<%= edit._id %>">Back to ShowPage</a>
+        </div>
+        
+       
+ 
+    
+
+</form>
+<% include ./partials/footer %>

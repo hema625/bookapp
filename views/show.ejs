@@ -1,0 +1,31 @@
+
+<% include ./partials/header %>
+
+<h1>Show page</h1>
+
+<div>
+    <%= all.title %>
+</div>
+
+<img src="<%= all.image %>">
+<div>
+    <%= all.description %>
+</div>
+
+<div>
+    <%= all.date.toDateString() %>
+</div>
+
+<a href = "/books/<%= all._id %>/edit">Edit</a>
+
+<form action = "/books/<%= all._id %>?_method=DELETE"  method="POST">
+
+    <button>Delete</button>
+</form>
+
+
+<a href = "/books">Back to HomePage</a>
+    
+
+
+<% include ./partials/footer %>

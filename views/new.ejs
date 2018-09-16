@@ -1,0 +1,36 @@
+
+<% include ./partials/header %>
+<h1>New Page</h1>
+
+<form action = "/books" method = "POST">
+    
+    <!--<div>-->
+           <label>New Title</label>
+           <input type = "text" name = "h[title]" placeholder = "Enter your title">
+    <!--</div>-->
+   
+    <!--<div>-->
+          <label>New Image</label>
+          <input type = "text" name = "h[image]" placeholder = "Enter your image">
+    <!--</div>-->
+    
+    <label>New Description</label>
+    
+    <textarea name = "h[description]" placeholder = "Enter your Description"></textarea>
+    
+    <!--<div>-->
+           <!--<label>New Description</label>-->
+           <!--<input type = "text" name = "h[desc]" placeholder = "Enter your Description">-->
+    <!--</div>-->
+    
+    <!--<div>-->
+        <button>Submit</button>
+    <!--</div>-->
+    
+     <div>
+             <a href = "/books">Back to HomePage</a>
+        </div>
+    
+
+</form>
+<% include ./partials/footer %>
