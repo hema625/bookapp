@@ -1,0 +1,50 @@
+h1
+{
+    margin-top: 40px;
+}
+
+img{
+     width: 600px;
+     height: 400px;
+    /*margin: 10px;*/
+}
+
+
+.container
+{
+    display : flex;
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    
+    
+}
+
+.displaybook{
+    display: inline-block;
+    margin: 40px;
+    border: 1px solid #eee;
+    padding: 20px;
+    /*width: 400px;*/
+    /*height: 300px;*/
+    box-shadow: 0px 3px 3px 3px #EEE
+}
+
+/*.card-group*/
+/*{*/
+/*    border: 1px solid #eee;*/
+/*}*/
+
+/*.headerdisplay{*/
+    /*padding: 5px;*/
+/*    text-align: center*/
+/*}*/
+
+/*.bottom {*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+    /*font-size : 15px;*/
+    /*background : grey;*/
+    /*margin-left: 25px;*/
+    /*text-align: center;*/
+     /*padding: 10px;*/
+/*}*/

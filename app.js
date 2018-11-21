@@ -9,6 +9,7 @@ var mo = require("method-override");
 app.set("view engine","ejs");
 app.use(body.urlencoded({extended : true }));
 app.use(mo("_method"));
+app.use(express.static("public"));
 
 //mongoose setup
 mongoose.connect("mongodb://localhost:27017/bookapp",{useNewUrlParser : true});
@@ -31,6 +32,8 @@ var book = mongoose.model("book",bookSchema);
 //     image : "https://images-na.ssl-images-amazon.com/images/I/51K4qQeoZEL._SX325_BO1,204,203,200_.jpg",
 //     description : "Mind Power book"
 // });
+
+//Routes
 
 app.get("/", function(req,res)
 {
