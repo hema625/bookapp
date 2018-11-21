@@ -12,7 +12,12 @@ app.use(mo("_method"));
 app.use(express.static("public"));
 
 //mongoose setup
-mongoose.connect("mongodb://localhost:27017/bookapp",{useNewUrlParser : true});
+//mongoose.connect("mongodb://localhost:27017/bookapp",{useNewUrlParser : true});
+mongoose.connect("mongodb://bookapp:bookapp11@ds253918.mlab.com:53918/bookapp",{useNewUrlParser : true});
+//mongodb://<dbuser>:<dbpassword>@ds119650.mlab.com:19650/rockets
+//mongodb://<dbuser>:<dbpassword>@ds253918.mlab.com:53918/bookapp
+
+
 
 var bookSchema = new mongoose.Schema({
     title : String,
